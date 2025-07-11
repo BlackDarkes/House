@@ -1,0 +1,22 @@
+@use "@/styles/base/variables.scss" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: rem(33);
+
+  &Logo {
+    color: $greenLogo;
+  }
+
+  &List {
+    display: flex;
+    column-gap: rem(60);
+  }
+
+  &Link{
+    color: $grayNavigation;
+    text-decoration: none;
+  }
+}
