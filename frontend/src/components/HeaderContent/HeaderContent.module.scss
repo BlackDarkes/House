@@ -1,0 +1,65 @@
+@use "@/styles/base/variables.scss" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: rem(33);
+
+  &Logo {
+    color: $greenLogo;
+  }
+
+  &Navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: rem(60);
+
+    @include mobile() {
+      @include full-vw-centered-line();
+    }
+
+    @include mobile-s() {
+      position: static;
+    }
+  }
+
+  &Icons {
+    justify-content: space-between;
+    padding: rem(16) rem(15);
+    background-color: $greenLight;
+
+    @include mobile() {
+      width: 100%;
+    }
+  }
+
+  &Icon {
+    display: inline-flex;
+    transition: 0.4s;
+
+    @include hover() {
+      color: $greenButton;
+    }
+
+    &:focus-visible {
+      background-color: $greenFocus;
+      color: $greenButton;
+    }
+
+    &:active {
+      color: $greenActive;
+    }
+  }
+
+  @include mobile() {
+    flex-direction: column;
+    row-gap: rem(33);
+    padding-block: rem(17) 0;
+  }
+
+  @include mobile-s() {
+    row-gap: rem(16);
+  }
+}

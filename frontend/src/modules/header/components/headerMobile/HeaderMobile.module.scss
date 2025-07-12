@@ -1,14 +1,7 @@
 @use "@/styles/base/variables.scss" as *;
-
 .header {
-  &List {
-    display: flex;
-    column-gap: rem(60);
-  }
-
-  &Link{
-    @include fluid-text(20, 18);
-    color: $grayNavigation;
+  &Icon {
+    display: inline-flex;
     transition: 0.4s;
 
     @include hover() {
@@ -17,7 +10,7 @@
 
     &:focus-visible {
       background-color: $greenFocus;
-      padding-inline: rem(5);
+      color: $greenButton;
     }
 
     &:active {

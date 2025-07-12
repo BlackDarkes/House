@@ -5,6 +5,20 @@ $tablet: 1024.98;
 $mobile: 767.98;
 $mobile-s: 480.98;
 
+@mixin hover() {
+  @media (any-hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}
+
 @mixin laptop() {
   @media (width <= rem($laptop)) {
     @content;

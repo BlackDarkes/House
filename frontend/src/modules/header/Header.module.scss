@@ -2,4 +2,8 @@
 
 .header {
   background-color: $greenLight;
+
+  @include mobile-s() {
+    background-color: transparent;
+  }
 }
