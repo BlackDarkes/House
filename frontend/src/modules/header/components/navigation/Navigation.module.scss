@@ -7,7 +7,7 @@
   }
 
   &Link{
-    @include fluid-text(20, 18);
+    @include fluid-text(18, 16);
     color: $grayNavigation;
     transition: 0.4s;
 

@@ -1,0 +1,62 @@
+@use "@/styles/base/variables.scss" as *;
+
+.descriptionBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: rem(30);
+
+  &Image {
+    width: min(100%, rem(540));
+    height: 100%;
+
+    @include tablet() {
+      width: rem(330)
+    }
+
+    @include mobile() {
+      width: rem(195)
+    }
+
+    @include mobile-s() {
+      @include visually-hidden();
+    }
+  }
+
+  &Texts {
+    flex-shrink: 0;
+    margin-bottom: rem(60);
+
+    @include mobile() {
+      margin-bottom: rem(20);
+    }
+
+    @include mobile-s() {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &Title {
+    @include fluid-text(60, 30);
+    margin-bottom: rem(20);
+    line-height: 100%;
+    color: $grayText;
+
+    &Ink {
+      color: $greenLogo;
+    }
+  }
+
+  &About {
+    @include fluid-text(18, 14);
+    color: $grayLight;
+  }
+
+  &Button {
+    padding: rem(21) rem(60);
+
+    @include mobile() {
+      padding: rem(14) rem(30);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use "@/styles/base/variables.scss" as *;
+
+.button {
+  color: $greenButton;
+  border: 1px solid $greenButton;
+  transition: 0.4s;
+
+  &:focus-visible {
+    background-color: $greenLight;
+  }
+
+  &:active {
+    background-color: $greenActive;
+    color: $white;
+  }
+
+  @include hover() {
+    background-color: $greenButton;
+    color: $white;
+  }
+}

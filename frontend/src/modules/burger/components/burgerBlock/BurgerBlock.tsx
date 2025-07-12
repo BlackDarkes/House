@@ -9,7 +9,7 @@ interface IBurgerBlock {
 export const BurgerBlock = ({ closeBurger }: IBurgerBlock) => {
   return (
     <>
-      <button type="button" className={styles.burgerClose} onClick={closeBurger}>
+      <button type="button" className={styles.burgerClose} onClick={closeBurger} aria-label="Закрыть меню">
         <IconBurgerClose />
       </button>
       <ul className={styles.burgerList}>

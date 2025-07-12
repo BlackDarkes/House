@@ -27,10 +27,10 @@
 
   &Icons {
     justify-content: space-between;
-    padding: rem(16) rem(15);
     background-color: $greenLight;
-
+    
     @include mobile() {
+      padding: rem(16) rem(15);
       width: 100%;
     }
   }
@@ -61,5 +61,6 @@
 
   @include mobile-s() {
     row-gap: rem(16);
+    background-color: $white;
   }
 }

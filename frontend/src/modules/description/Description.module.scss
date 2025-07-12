@@ -1,0 +1,11 @@
+.description {
+  margin-block: rem(101) rem(70);
+
+  @include mobile() {
+    margin-top: rem(185);
+  }
+
+  @include mobile-s() {
+    margin-top: rem(180);
+  }
+}

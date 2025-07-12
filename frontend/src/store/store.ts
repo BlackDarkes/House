@@ -6,6 +6,8 @@ interface IStore {
   addPurchases: () => void;
   isBurger: boolean;
   handleBurger: () => void;
+  type: "franch" | "germany" | "england";
+  handleType: (type: "franch" | "germany" | "england") => void;
 }
 
 export const useStore = create<IStore>()(
@@ -14,6 +16,8 @@ export const useStore = create<IStore>()(
     addPurchases: () =>
       set((state) => ({ purchasesCount: state.purchasesCount + 1 })),
     isBurger: false,
-    handleBurger: () => set((state) => ({ isBurger: !state.isBurger }))
+    handleBurger: () => set((state) => ({ isBurger: !state.isBurger })),
+    type: "franch",
+    handleType: (type) => set(() => ({ type: type })),
   }))
 );
