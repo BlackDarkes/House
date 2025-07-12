@@ -1,7 +1,7 @@
 import { Container } from "../../components/container/Container";
 import { ReproductionsBlock } from "./components/reproductionsBlock/ReproductionsBlock";
 import { Title } from "./components/title/Title";
-import { useButtons } from "./hooks/generateButton";
+import { useButtons } from "./hooks/useButtons";
 import styles from './Reproductions.module.scss'
 
 export const Reproductions = () => {

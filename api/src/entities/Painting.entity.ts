@@ -19,4 +19,7 @@ export class Painting {
 
   @Column({ type: "varchar", length: 255, nullable: true })
   prise!: string | null;
+
+  @Column({ type: "varchar", length: 255, nullable: true })
+  type!: string | null;
 }

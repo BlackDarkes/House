@@ -7,4 +7,5 @@ export interface IPaintings extends ResultSetHeader {
   title: string;
   param: string;
   price: string;
+  type: string;
 }

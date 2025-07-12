@@ -5,4 +5,5 @@ export interface IPaintings {
   title: string;
   param: string;
   price: string;
+  type: string;
 }
