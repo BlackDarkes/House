@@ -1,0 +1,29 @@
+.reproductionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &Title {
+    @include fluid-text(40, 24);
+  }
+
+  &Buttons {
+    display: flex;
+    column-gap: rem(32);
+    width: 100%;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    @include mobile-s() {
+      column-gap: rem(20);
+    }
+  }
+
+  @include mobile() {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: rem(20);
+  }
+}

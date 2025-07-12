@@ -1,11 +1,10 @@
 import { Container } from "../../components/container/Container";
 import { useWindowSize } from "../../hooks/useWindowSize";
 import { useStore } from "../../store/store";
+import { BREAKPOINTS } from "../../utils/constants";
 import { HeaderMobile } from "./components/headerMobile/HeaderMobile";
 import { Navigation } from "./components/navigation/Navigation";
 import styles from "./Header.module.scss";
-
-const BREAKPOINTS = 480;
 
 export const Header = () => {
   const { handleBurger } = useStore();

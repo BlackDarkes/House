@@ -2,8 +2,7 @@ import { BurgerBlock } from "./components/burgerBlock/BurgerBlock";
 import styles from "./Burger.module.scss";
 import { useStore } from "../../store/store";
 import { useWindowSize } from "../../hooks/useWindowSize";
-
-const BREAKPOINTS = 480;
+import { BREAKPOINTS } from "../../utils/constants";
 
 export const Burger = () => {
   const { isBurger, handleBurger } = useStore();
