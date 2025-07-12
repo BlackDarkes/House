@@ -1,0 +1,20 @@
+@use "@/styles/helpers/index.scss" as *; 
+
+.burger {
+  &Close {
+    @include hover-icon();
+    margin-bottom: rem(30);
+  }
+
+  &List {
+    display: flex; 
+    flex-direction: column;
+    row-gap: rem(50);
+    margin-bottom: rem(60);
+  }
+
+  &Link {
+    @include hover-icon();
+    font-size: rem(18);
+  }
+}

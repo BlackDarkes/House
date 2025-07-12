@@ -11,17 +11,6 @@
     color: $grayNavigation;
     transition: 0.4s;
 
-    @include hover() {
-      color: $greenButton;
-    }
-
-    &:focus-visible {
-      background-color: $greenFocus;
-      padding-inline: rem(5);
-    }
-
-    &:active {
-      color: $greenActive;
-    }
+    @include hover-icon();
   }
 }

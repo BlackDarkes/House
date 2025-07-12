@@ -1,7 +1,9 @@
 @use "./function.scss" as *;
+@use "./media.scss" as *;
+@use "@/styles/base/variables.scss" as *;
 @use "sass:math";
 
-@mixin fluid-text($max:48, $min:14) {
+@mixin fluid-text($max: 48, $min: 14) {
   font-size: fluid($max, $min);
 }
 
@@ -44,7 +46,7 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: $left;
     right: $right;
@@ -52,6 +54,23 @@
     translate: $translate;
     width: 100%;
     height: rem(1);
-    background-color: #C3D1C6;
+    background-color: #c3d1c6;
+  }
+}
+
+@mixin hover-icon {
+  transition: 0.4s;
+
+  @include hover() {
+    color: $greenButton;
+  }
+
+  &:focus-visible {
+    background-color: $greenFocus;
+    color: $greenButton;
+  }
+
+  &:active {
+    color: $greenActive;
   }
 }
