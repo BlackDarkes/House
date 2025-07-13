@@ -19,7 +19,7 @@ export default defineConfig({
       scss: {
         additionalData: `
           @use "@/styles/helpers/index.scss" as *;
-
+          @use "@/styles/base/variables.scss" as *;
         `,
       },
     },

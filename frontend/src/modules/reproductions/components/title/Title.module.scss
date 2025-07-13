@@ -10,7 +10,6 @@
   &Buttons {
     display: flex;
     column-gap: rem(32);
-    width: 100%;
     overflow-x: auto;
     &::-webkit-scrollbar {
       width: 0;
@@ -18,6 +17,7 @@
 
     @include mobile-s() {
       column-gap: rem(20);
+      width: 100%;
     }
   }
 

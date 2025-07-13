@@ -1,0 +1,62 @@
+.reproductionList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(30);
+  margin-top: rem(30);
+
+  &Item {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+    padding: rem(20) rem(20) rem(30) rem(20);
+    width: 100%;
+    background-color: $greenLight;
+  }
+
+  .reproductionInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(30);
+
+    &Author {
+      margin-bottom: rem(10);
+      color: $grayLight;
+    }
+
+    &Title {
+      @include fluid-text(30, 24);
+      margin-bottom: rem(10);
+    }
+
+    &Price {
+      @include fluid-text(24, 20);
+      margin-bottom: rem(24);
+      color: $greenButton;
+    }
+
+    &Button {
+      display: block;
+      margin-inline: auto;
+      padding-block: rem(21);
+      width: 100%;
+    }
+  }
+
+  @include tablet() {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile-s() {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.loading {
+  text-align: center;
+  padding-block: rem(70);
+  font-size: rem(24);
+}
+
+.error {
+  @extend .loading;
+}
