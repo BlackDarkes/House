@@ -14,7 +14,7 @@ export const Reproductions = () => {
   })
 
   return (
-    <section>
+    <section className={styles.reproduction}>
       <Container>
         <Title buttons={buttons} />
         <ReproductionsBlock isLoading={isLoading} error={error} reproductions={generateReproductions} />

@@ -1,0 +1,60 @@
+.NevCollectionBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: rem(60);
+
+  &Title {
+    display: flex;
+    align-items: center;
+    column-gap: rem(20);
+    margin-bottom: rem(20);
+    color: $white;
+
+    &Text {
+      @include fluid-text(40, 24);
+      line-height: 100%;
+      width: min(100%, rem(421));
+    }
+
+    &Icon {
+      color: $yellow;
+      width: rem(80);
+      aspect-ratio: 1;
+    }
+  }
+
+  &Text {
+    @include fluid-text(18, 16);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(25);
+    color: $white;
+    width: min(100%, rem(540));
+  }
+
+  &Button {
+    padding: rem(21) rem(60);
+    color: $grayNavigation;
+    background-color: $yellow;
+    border-color: transparent;
+
+    &:focus-visible {
+      background-color: $yellowHover;
+      border-color: $yellowBorder;
+    }
+
+    &:active {
+      background-color: $yellowActive;
+    }
+
+    @include hover() {
+      background-color: $yellowHover;
+      color: $grayNavigation;
+    }
+
+    @include mobile() {
+      padding: rem(18) rem(36);
+    }
+  }
+}

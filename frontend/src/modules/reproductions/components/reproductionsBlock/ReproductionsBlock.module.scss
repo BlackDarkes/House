@@ -39,6 +39,12 @@
       margin-inline: auto;
       padding-block: rem(21);
       width: 100%;
+
+      &:focus-visible {
+        border-color: $grayText;
+        color: $white;
+        background-color: $greenButton;
+      }
     }
   }
 

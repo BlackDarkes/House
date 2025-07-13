@@ -1,17 +1,27 @@
 @use "@/styles/base/variables.scss" as *;
 
 .reproduction {
+  padding-bottom: rem(70);
+
   &Button {
     @include fluid-text(20, 18);
     flex-shrink: 0;
     padding: rem(10) rem(20);
     background-color: $greenLight;
     border-radius: rem(20);
+    border-color: transparent;
     transition: 0.4s;
+
+    &:focus-visible {
+      border-color: $greenButton;
+      color: $grayText;
+    }
 
     &Active {
       background-color: $greenActive;
       color: $white;
     }
+
+
   }
 }

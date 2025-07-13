@@ -1,3 +1,4 @@
+import { Button } from "../../../components/button/Button";
 import { useStore } from "../../../store/store";
 
 interface INameButton {
@@ -17,14 +18,15 @@ export const useButtons = () => {
 
   const getButtons = (styles: { base: string, active: string }) => {
     return (Object.keys(nameButton) as Array<keyof INameButton>).map((key) => (
-      <button
+      <Button
         key={key}
         type="button"
         className={`${styles.base} ${type === key ? styles.active : ''} `}
         onClick={() => handleType(key)}
+        ariaLabel={key}
       >
         {nameButton[key]}
-      </button>
+      </Button>
     ))
   }
 
