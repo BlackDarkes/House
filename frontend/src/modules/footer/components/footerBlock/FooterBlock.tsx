@@ -35,26 +35,26 @@ export const FooterBlock = () => {
           </li>
         </ul>
 
-        <div>
-          <ul>
+        <div className={styles.buttons}>
+          <ul className={styles.buttonsList}>
             <li>
-              <Button ariaLabel="facebook" type="button">
+              <Button ariaLabel="facebook" type="button" className={styles.buttonsButton}>
                 <IconFacebook />
               </Button>
             </li>
             <li>
-              <Button ariaLabel="instagram" type="button">
+              <Button ariaLabel="instagram" type="button" className={styles.buttonsButton}>
                 <IconInstagram />
               </Button>
             </li>
             <li>
-              <Button ariaLabel="youtube" type="button">
+              <Button ariaLabel="youtube" type="button" className={styles.buttonsButton}>
                 <IconYoutube />
               </Button>
             </li>
           </ul>
 
-          <p>
+          <p className={styles.buttonsSecure}>
             <span>Ink. House ®</span>
             <span>All rights reserved</span>
           </p>

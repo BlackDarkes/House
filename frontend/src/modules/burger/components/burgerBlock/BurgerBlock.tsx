@@ -13,9 +13,9 @@ export const BurgerBlock = ({ closeBurger }: IBurgerBlock) => {
         <IconBurgerClose />
       </button>
       <ul className={styles.burgerList}>
-        <li><a href="#" className={styles.burgerLink}>Репродукции</a></li>
-        <li><a href="#" className={styles.burgerLink}>Новинки</a></li>
-        <li><a href="#" className={styles.burgerLink}>О нас</a></li>
+        <li><a href="#reproduction" className={styles.burgerLink}>Репродукции</a></li>
+        <li><a href="#news" className={styles.burgerLink}>Новинки</a></li>
+        <li><a href="#team" className={styles.burgerLink}>О нас</a></li>
       </ul>
     </>
   );

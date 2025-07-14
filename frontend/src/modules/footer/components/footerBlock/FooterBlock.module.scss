@@ -18,11 +18,20 @@
       color: $grayText;
       margin-bottom: rem(8);
       width: rem(170);
+
+      @include tablet() {
+        width: auto;
+      }
     }
 
     &Master {
       @include fluid-text(18, 16);
       color: $grayLight;
+    }
+
+    @include tablet() {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 
@@ -34,6 +43,12 @@
     &List {
       display: flex;
       column-gap: rem(60);
+
+      @include mobile-s() {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: rem(20);
+      }
     }
 
     &Item {
@@ -65,5 +80,62 @@
         color: $grayText;
       }
     }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+
+      &List {
+        display: flex;
+        column-gap: rem(30);
+
+        @include mobile() {
+          justify-content: center;
+        }
+      }
+
+      &Button {
+        display: inline-flex;
+        border: 0;
+        color: $grayText;
+
+        &:focus-visible {
+          color: $greenButton;
+          background-color: $greenFocus;
+        }
+
+        &:active {
+          color: $greenActive;
+        }
+
+        @include hover() {
+          color: $greenButton;
+          background-color: transparent;
+        }
+      }
+
+      &Secure {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem96;
+        font-size: rem(12);
+        color: $grayLight;
+
+        @include mobile() {
+          flex-direction: row;
+          column-gap: rem(3);
+        }
+      }
+    }
+
+    @include mobile() {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @include tablet() {
+    flex-direction: column;
+    row-gap: rem(30);
   }
 }

@@ -7,17 +7,17 @@ export const Navigation = () => {
       <nav>
         <ul className={styles.headerList}>
           <li>
-            <a href="#" className={styles.headerLink}>
+            <a href="#reproduction" className={styles.headerLink}>
               Репродукции
             </a>
           </li>
           <li>
-            <a href="#" className={styles.headerLink}>
+            <a href="#news" className={styles.headerLink}>
               Новинки
             </a>
           </li>
           <li>
-            <a href="#" className={styles.headerLink}>
+            <a href="#team" className={styles.headerLink}>
               О нас
             </a>
           </li>

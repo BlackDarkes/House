@@ -4,7 +4,7 @@ import styles from './NevCollection.module.scss'
 
 export const NewCollection = () => {
   return (
-    <section className={styles.NevCollection}>
+    <section className={styles.NevCollection} id="news">
       <Container>
         <NewCollectionBlock />
       </Container>
