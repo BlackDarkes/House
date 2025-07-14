@@ -8,6 +8,7 @@
 <li>Zustand</li>
 <li>React query</li>
 <li>Sass(Scss)</li>
+<li>Axios</li>
 <li>Vite</li>
 </ul><br>
 
