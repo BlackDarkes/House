@@ -1,0 +1,69 @@
+.footerBlock {
+  display: flex;
+  column-gap: rem(115);
+
+  &Logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $greenLogo;
+
+    &Texts {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &Tel {
+      @include fluid-text(20, 16);
+      color: $grayText;
+      margin-bottom: rem(8);
+      width: rem(170);
+    }
+
+    &Master {
+      @include fluid-text(18, 16);
+      color: $grayLight;
+    }
+  }
+
+  &Info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &List {
+      display: flex;
+      column-gap: rem(60);
+    }
+
+    &Item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &Title {
+      @include fluid-text(20, 16);
+      color: $grayText;
+      margin-bottom: rem(6);
+    }
+
+    &Link {
+      color: $grayLight;
+      margin-bottom: rem(8);
+      transition: 0.4s;
+
+      &:focus-visible {
+        outline: 1px solid $grayLight;
+        outline-offset: rem(3);
+      }
+
+      &:active {
+        color: $grayNavigation;
+      }
+
+      @include hover() {
+        color: $grayText;
+      }
+    }
+  }
+}

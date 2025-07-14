@@ -1,7 +1,7 @@
-import ImageEasel from "../../../../assets/images/easel.png"
-import ImageFirstPeople from "../../../../assets/images/peoples/people1.png";
-import ImageSecondPeople from "../../../../assets/images/peoples/people2.png";
-import ImageThreePeople from "../../../../assets/images/peoples/people3.png";
+import ImageEasel from "@/assets/images/easel.png"
+import ImageFirstPeople from "@/assets/images/peoples/people1.png";
+import ImageSecondPeople from "@/assets/images/peoples/people2.png";
+import ImageThreePeople from "@/assets/images/peoples/people3.png";
 import styles from "./TeamBlock.module.scss";
 
 export const TeamBlock = () => {
