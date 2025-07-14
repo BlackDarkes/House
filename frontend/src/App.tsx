@@ -3,6 +3,7 @@ import { Description } from "./modules/description/Description";
 import { Header } from "./modules/header/Header";
 import { NewCollection } from "./modules/newCollection.tsx/NevCollection";
 import { Reproductions } from "./modules/reproductions/Reproductions";
+import { Team } from "./modules/team/Team";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Description />
         <Reproductions />
         <NewCollection />
+        <Team />  
       </main>
     </>
   );

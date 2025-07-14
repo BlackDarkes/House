@@ -15,6 +15,10 @@ h6 {
   font-weight: 500;
 }
 
+img, button {
+  user-select: none;
+}
+
 li {
   list-style: none;
 }
